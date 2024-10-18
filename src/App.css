@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #4caf50;
+}
+
+.link {
+  display: inline-block;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.link a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+/* Home Page */
+.home-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home-container h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  form input {
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Navbar for Login and Register pages */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}
+
+/* Navbar for Home page (when logged in) */
+.nav-user {
+  color: white;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.nav-logout {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: auto;
+}
+
+.nav-logout:hover {
+  background-color: #ff3333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-user,
+  .nav-logout {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
